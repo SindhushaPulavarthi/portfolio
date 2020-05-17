@@ -132,7 +132,7 @@ h2{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .education {
 
     margin-top:5%;
@@ -221,7 +221,7 @@ img{
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
 .skills{
 	margin-bottom:100px;
 	margin-top:60px;
@@ -235,6 +235,23 @@ img{
 
 }
 }
+
+@media only screen and (max-width: 650px) {
+	.link{
+	box-sizing: border-box;
+	display:inline-block;
+	padding:5px;
+	margin: 30px 3% 0 3%;
+	text-decoration:none;
+	font-size: 17px;
+	color:#ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 540;
+
+	}
+}
+
+@media only screen and (min-width: 908px) {
 .link{
 	box-sizing: border-box;
 	display:inline-block;
@@ -246,6 +263,7 @@ img{
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 540;
 
+}
 }
 
 
