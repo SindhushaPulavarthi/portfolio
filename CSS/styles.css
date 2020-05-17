@@ -1,0 +1,365 @@
+.about{
+	margin:2% auto 2% auto;
+	width:60%;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+
+}
+
+body{
+	padding :0;
+	margin :0;
+	width:100%;
+	
+}
+
+/* Container holds all the elements and determines the size of the card*/
+.container{
+	position:relative;
+    width:250px;
+    height:250px;
+    display:inline-block;
+    margin:8px;
+    border-radius: 20px;
+    /*background-color:#ffffff;*/
+    
+}
+
+/* Card element holds the front and back element and also controls the mouse action using hover pseudo class */
+.flip-card {
+  position: absolute;
+  background-color: #00806e47;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition:all 0.8s ease;
+  transform-style: preserve-3d;
+  /*If we take away preserve 3d the text on the back side is just the reverse of the front element.Without preserve 3d we just flip the front slice back and forth just as 2d flip*/
+  /*transition: transform 0.8s;*/
+}
+
+/* The hover pseudo class takes care of the flip*/
+ .flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+
+/* The front element is the default face of the element which is the front side of the card*/
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00806e47;
+  backface-visibility:hidden;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* The back element is the reverse side of the card i.e when the user hovers over the card*/
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00806e47;
+  backface-visibility: hidden;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  transform: rotateY(180deg);/*back element flips over to the front once we move the cursor away*/
+
+}
+
+h1{
+	font-weight: bold;
+}
+
+h3{
+	 font-family:serif;
+	 font-style: italic;
+
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+@media only screen and (max-width: 908px) {
+.home{
+	text-align:center;
+	width:100%;
+	height:50%;
+    background-repeat: no-repeat;
+    background-image: url('../images/home-1.jpg');
+    margin-top:0;
+}
+
+}
+
+@media only screen and (min-width: 909px){
+.home{
+	text-align:center;
+	width:100%;
+	height:50%;
+    background-repeat: no-repeat;
+    background-image: url('../images/home.png');
+    margin-top:0;
+}
+}
+
+
+
+
+	
+.fas{
+	display:inline-block;
+	margin-right: 1%;
+
+}
+
+
+
+
+.edu{
+   
+   margin:0 auto 30px auto;
+   text-align: center;
+   color:#000080;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .education {
+
+    margin-top:5%;
+	margin-bottom:5%;
+	padding-bottom: 70px;
+	padding-top: 30px;
+	background-color: #8080801c;
+	}
+}
+@media only screen and (min-width: 992px){
+	.education{
+	   background-image: url('../images/Education.jpg');
+	   margin-top:5%;
+       margin-bottom:5%;
+	   padding-bottom: 70px;
+	   padding-top: 30px;
+       
+      
+}
+}
+
+
+.heading{
+
+	width:40%;
+	margin:120px auto 30px auto;
+	font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#ffffff;
+}
+
+.icons{
+	margin:0 auto 0 auto;
+
+
+}
+
+
+@media only screen and (max-width: 991px) {
+
+	img{
+	margin: 6% auto 0 auto;
+	border-radius: 50%;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 3px;
+}
+}
+
+@media only screen and (min-width: 992px){
+img{
+	margin: 2% auto 0 auto;
+	border-radius: 50%;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 3px;
+}
+}
+
+.btns{
+	box-sizing: border-box;
+	margin:20px;
+	color:#ffffff;
+}
+
+.btns:hover{
+	border-radius: 10px;
+	padding:10px;
+	color:black;
+	background: #e91e63;
+}
+
+.sections{
+	text-align:center;
+	margin:0 auto 0 auto;
+	width:100%;
+}
+
+.skill{
+   
+   margin:0 auto 30px auto;
+   text-align: center;
+   color:#000080;
+   width:100%;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+.skills{
+	margin-bottom:100px;
+	margin-top:60px;
+	}
+}
+
+@media only screen and (min-width: 908px) {
+.skills{
+	margin-bottom:100px;
+	margin-top:100px;
+
+}
+}
+.link{
+	box-sizing: border-box;
+	display:inline-block;
+	padding:7px;
+	margin: 30px 5% 0 5%;
+	text-decoration:none;
+	font-size: 17px;
+	color:#ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 540;
+
+}
+
+
+.link:hover{
+
+    color:black;
+    background: #ffffff9e;
+    border-radius: 15px;
+   
+
+
+   
+
+}
+
+.h1{
+	font-family: Arial, Helvetica, sans-serif;
+	display:inline-block;
+	font-weight: 550;
+	font-size: 32px;
+	
+}
+
+.divisions{
+	text-align: center;
+	margin:0 auto;
+}
+	
+p{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.skillset{
+
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+}
+
+.skls{
+     position:relative;
+     margin-left: 20%;
+     display: inline-block;
+
+}
+
+.progress{
+    background-color: #e0e0e0;
+	position:relative;
+	display:inline-block;
+	width:280px;
+	height:15px;
+	border-radius: 8px;
+	overflow:hidden;
+	margin-bottom:30px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+
+}
+
+.progress-bar{
+	height:15px;
+	background-color: #800000;
+}
+
+
+
+.contact-me{
+	margin:30px auto 0 auto;
+	text-align: center;
+	width:100%;
+	background: #8080801c;
+	padding-bottom: 40px;
+	padding-top: 10px;
+
+}
+
+
+.con{
+    color:#009688;
+}
+
+.msg{
+    color:#11999E;
+}
+
+.btn{
+	
+	background: #11cdd4;
+	background-image: -webkit-linear-gradient(top,#11cdd4,#11999e);
+	background-image: -moz-linear-gradient(top,#11cdd4,#11999e);
+	background-image: -ms-linear-gradient(top,#11cdd4,#11999e);
+	background-image: -o-linear-gradient(top,#11cdd4,#11999e);
+	background-image: linear-gradient(to bottom,#11cdd4,#11999e);
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	
+
+}
+
+
+
+.btn:hover{
+	background: #30e3cb;
+	background-image: -webkit-linear-gradient(top,#30e3cb,#2bc4ad);
+	background-image: -moz-linear-gradient(top,#30e3cb,#2bc4ad);
+	background-image: -ms-linear-gradient(top,#30e3cb,#2bc4ad);
+	background-image: -o-linear-gradient(top,#30e3cb,#2bc4ad);
+	background-image: linear-gradient(to bottom,#30e3cb,#2bc4ad);
+	text-decoration: none;
+
+}
